@@ -1,0 +1,175 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+}
+
+header {
+  background-image: url(/images/paul-brown-stadium-122405.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 60% 40%;
+  background-attachment: fixed;
+  background-blend-mode: multiply;
+  height: 90vh;
+  background-color: #fb4f14;
+  color: white;
+  font-family: "Lato", sans-serif;
+  padding: 40px 0 0;
+  border-bottom: 15px solid black;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  margin: 0 auto;
+  overflow: hidden;
+  height: 70%;
+}
+
+.bengals-logo {
+  margin-bottom: -45px;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+.year {
+  font-size: 200px;
+  z-index: -1;
+  opacity: 0.2;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.countdown {
+  display: flex;
+  transform: scale(2);
+}
+
+.time {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 10px;
+  text-transform: capitalize;
+  font-weight: 900;
+}
+
+.time h2 {
+  margin: 0 0 5px;
+}
+
+.carousel {
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.carousel-title {
+  margin-bottom: 20px;
+}
+
+.main-gallery {
+  max-width: 700px;
+  height: 100%;
+  width: 90%;
+}
+
+.gallery-cell {
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+
+.gallery-image {
+  object-fit: cover;
+}
+
+.cell-info {
+  margin-top: 20px;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+footer {
+  margin-top: 5rem;
+  background: #fb4f14;
+  font-size: 1rem;
+  padding: 0.5em 0;
+  text-align: center;
+}
+
+footer p {
+  color: rgb(255, 255, 255, 0.54);
+  font-family: "ubuntu", sans-serif;
+  font-size: 1rem;
+}
+
+@media (max-width: 750px) {
+  .carousel-title {
+    font-size: 1.5em;
+  }
+}
+
+@media (max-width: 500px) {
+  .bengals-logo {
+    height: 105px;
+    margin-bottom: 0;
+  }
+
+  .container {
+    height: 85%;
+  }
+  h1 {
+    font-size: 25px;
+  }
+
+  .carousel-title {
+    font-size: 1.3em;
+  }
+
+  .cell-headline {
+    font-size: 1.3em;
+    margin-top: 20px;
+  }
+  .cell-info {
+    display: none;
+  }
+
+  .time {
+    margin: 5px;
+  }
+
+  .time h2 {
+    font-size: 12px;
+    margin: 0;
+  }
+
+  .time small {
+    font-size: 10px;
+  }
+  .gallery-cell {
+    height: auto;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .main-gallery {
+    width: 95%;
+  }
+}
